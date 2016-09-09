@@ -34,7 +34,7 @@ _It's mostly bug free. Older browsers might have issues._
 
 ## Support and contact details
 
-_Feel free to make a branch and work on it._
+_Feel free to make a branch and work on it. Contact git user: TJ2001 for any issues._
 
 ## Technologies Used
 
