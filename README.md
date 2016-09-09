@@ -14,7 +14,7 @@ _The purpose of this application is to take inputs from the user to calculate co
 * _Have Gradle installed on system._
 * _Open console to the project package folder and run "gradle javaCompile" ._
 * _Open console to build/classes/main/ within the project folder._
-* _Run command "java App" ._
+* _Run command "java App"._
 
 _Everything should just work fine, if directions are followed._
 
@@ -22,10 +22,11 @@ _Everything should just work fine, if directions are followed._
 
 |Behavior|Input|Output|
 |---|---|---|
-|The user will be able to input number of guest and get a cost associated with it.| 1 | 5 |
-|After the first condition is met any multiple of three will output a "ping". | 3 | 1, 2, ping |
-|After the previous two conditions are met any multiple of 5 will generate a "pong".| 10 | 1, 2, ping, 4, pong, 6, 7, 8, ping, pong|
-|After the previous three conditions are met any multiple of three and five will generate a "pingpong"| 15 | 1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, pingpong|
+|The application will accept number of guest and return cost for the guest.| 1 | 5 |
+|The application will accept type of food and return cost per plate. | Japanese | 10 |
+|The application will accept beverage options and return cost per guest. | S | 2 |
+|The application will accept types of entertainment options and return cost. | c | 100 |
+|The application will accept number of guests, beverage, food type, and entertainment option. | 20, Italian, b, s | 450 |
 
 ## Known Bugs
 
@@ -37,7 +38,7 @@ _Feel free to make a branch and work on it._
 
 ## Technologies Used
 
-_HTML, Javascript, and JQuery were used._
+_Java and Gradle are utilized for the making of this application._
 
 ### License
 

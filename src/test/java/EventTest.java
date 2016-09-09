@@ -43,7 +43,7 @@ public class EventTest {
 
   @Test
   public void getDrinkCost_recieveSodaCost_ReturnDrinksPerGuest(){
-    String drink = "S";
+    String drink = "s";
     Event testEvent = new Event(0, "", drink, "");
     Integer expected = 2;
     assertEquals(expected, testEvent.getDrinkCost());
@@ -96,7 +96,7 @@ public class EventTest {
   @Test
   public void getTotalDrinkCost_returnTotalDrinkCost(){
     int guest = 10;
-    String drink = "B";
+    String drink = "b";
     Event testEvent = new Event(guest, "", drink, "");
     Integer expected = 50;
     assertEquals(expected, testEvent.getTotalDrinkCost());
