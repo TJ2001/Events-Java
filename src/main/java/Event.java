@@ -71,4 +71,9 @@ public class Event {
     Integer totalCost = getGuestCost() + (getTotalFoodCost()) + (getTotalDrinkCost()) + getShowCost();
     return totalCost;
   }
+
+  public Integer getTotalCostPerGuest(){
+    Integer totalCostPerGuest = getTotalCost() / mGuest;
+    return totalCostPerGuest;
+  }
 }
