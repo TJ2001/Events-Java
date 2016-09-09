@@ -1,5 +1,5 @@
-//Drinks: S for soda and water, B for beer and Wine, F for Full Bar.
-//Show: C for comedian, S for singer, D for dance troupe.
+//Drinks: s for soda and water, b for beer and Wine, f for Full Bar.
+//Show: c for comedian, s for singer, m for magician, d for dance troupe.
 
 public class Event {
   private int mGuest;
@@ -38,11 +38,11 @@ public class Event {
 
   public Integer getDrinkCost() {
     Integer drinkCostPerGuest = 0;
-    if (mDrink.equals("S")){
+    if (mDrink.equals("s")){
       drinkCostPerGuest = 2;
-    } else if (mDrink.equals("B")){
+    } else if (mDrink.equals("b")){
       drinkCostPerGuest = 5;
-    } else if (mDrink.equals("F")){
+    } else if (mDrink.equals("f")){
       drinkCostPerGuest = 10;
     }
     return drinkCostPerGuest;
@@ -55,14 +55,13 @@ public class Event {
 
   public Integer getShowCost() {
     Integer showCost = 0;
-    //C for Comedian, S for Singer, M for Magic, D for Dance Troupe
-    if (mShow.equals("C")){
+    if (mShow.equals("c")){
       showCost = 100;
-    } else if (mShow.equals("S")) {
+    } else if (mShow.equals("s")) {
       showCost = 150;
-    } else if (mShow.equals("M")) {
+    } else if (mShow.equals("m")) {
       showCost = 200;
-    } else if (mShow.equals("D")) {
+    } else if (mShow.equals("d")) {
       showCost = 1000;
     }
     return showCost;

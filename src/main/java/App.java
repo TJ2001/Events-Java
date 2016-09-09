@@ -14,28 +14,30 @@ public class App {
     System.out.println("Sounds great! " + numberOfGuests + " guests. Party Time, Excellent!");
     System.out.println("What type of food will you have. We have Japanese, Italian, and Seafood (serves lobster).");
     String food = myConsole.readLine();
-    System.out.println("Delicioius choice. Now, what type of beverage options will you want to be made available. [Enter \"S\" for soda and water, \"B\" for beer and Wine, \"F\" for full bar]");
+    System.out.println("Delicioius choice. Now, what type of beverage options will you want to be made available. [Enter \"s\" for soda and water, \"b\" for beer and Wine, \"f\" for full bar]");
     String drink = myConsole.readLine();
     System.out.println("Wahoo! Now we're cooking... or better yet, drinking!");
     System.out.println("Now for some entertainment. We have a very funny standup Comedian to emcee the event, a very popular local singer, and a dance troupe.");
-    System.out.println("[Enter \"C\" for the comedian, \"S\" for the singer, and \"D\" for the dance troupe.]");
+    System.out.println("[Enter \"c\" for the comedian, \"s\" for the singer, and \"d\" for the dance troupe.]");
     String show = myConsole.readLine();
     Event userEvent = new Event(guests, food, drink, show);
     Integer entranceFee = userEvent.getGuestCost();
     Integer totalCost = userEvent.getTotalCost();
     Integer totalFoodCost = userEvent.getTotalFoodCost();
+    Integer totalDrinkCost = userEvent.getTotalDrinkCost();
+    Integer showCost = userEvent.getShowCost();
 
     System.out.println("printf \"\033c\"");
     System.out.println("===============================================================================");
-    // System.out.println("Total Entrance Fee Cost: " + entranceFee);
-    // System.out.println("Total Food Cost: " = totalFoodCost);
-    // System.out.println("Total Beverage Cost: " = totalDrinkCost);
-    // System.out.println("Total Entertainment Cost: " = totalEntertainmentCost);
-    // System.out.println(" ");
-    // System.out.println("Well here's your projected total cost: " + totalCost);
+    System.out.println("Total Entrance Fee Cost: " + entranceFee);
+    System.out.println("Total Food Cost: " + totalFoodCost);
+    System.out.println("Total Beverage Cost: " + totalDrinkCost);
+    System.out.println("Total Entertainment Cost: " + showCost);
+    System.out.println(" ");
+    System.out.println("Well here's your projected total cost: " + totalCost);
     System.out.println(" ");
     // System.out.println("Total cost per guest: " + totalCostPerGuest);
-    System.out.println("Party On.");
+    System.out.println("Party On!");
     System.out.println("===============================================================================");
   }
 }

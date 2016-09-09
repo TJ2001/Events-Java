@@ -51,7 +51,7 @@ public class EventTest {
 
   @Test
   public void getDrinkCost_recieveWhiskeyCost_ReturnDrinksPerGuest(){
-    String drink = "F";
+    String drink = "f";
     Event testEvent = new Event(0, "", drink, "");
     Integer expected = 10;
     assertEquals(expected, testEvent.getDrinkCost());
@@ -59,7 +59,7 @@ public class EventTest {
 
   @Test
   public void getShowCost_returnComedianCost(){
-    String show = "C";
+    String show = "c";
     Event testEvent = new Event(0, "", "", show);
     Integer expected = 100;
     assertEquals(expected, testEvent.getShowCost());
@@ -67,7 +67,7 @@ public class EventTest {
 
   @Test
   public void getShowCost_returnDanceTroupeCost(){
-    String show = "D";
+    String show = "d";
     Event testEvent = new Event(0, "", "", show);
     Integer expected = 1000;
     assertEquals(expected, testEvent.getShowCost());
@@ -77,8 +77,8 @@ public class EventTest {
   public void getTotalCost_returnTotalCost(){
     int guest = 20;
     String food = "Italian";
-    String drink = "B";
-    String show = "S";
+    String drink = "b";
+    String show = "s";
     Event testEvent = new Event(guest, food, drink, show);
     Integer expected = 450;
     assertEquals(expected, testEvent.getTotalCost());
